@@ -1,0 +1,58 @@
+﻿@model TestCSharpMVC.Models.userTable
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>userTable</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.userName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.userName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.userLastName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.userLastName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.userPw)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.userPw)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.userPhase)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.userPhase)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.userId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
